@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lets Animate And Sort</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <div>
+        <img src="./logo.png" alt="" />
+      </div>
+      <div>
+        <h1>Sorting Alogrithm</h1>
+        <h5>Let's animate them</h5>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="input-data">
+        <textarea
+          id="input"
+          cols="30"
+          rows="12"
+          placeholder="Input Array Here With Space Between Items ..."
+        >
+40 20 25 18 21 34 50 10 9 30 </textarea
+        >
+        <div id="msg">
+          The values are refined and only number will be proccessed
+        </div>
+
+        <fieldset class="options" id="group2">
+          <div>
+            <input
+              class="opt"
+              id="opt1"
+              type="radio"
+              value="bubble"
+              name="group2"
+              checked
+            />
+            <label class="btn" for="opt1"> Bubble Sort </label>
+          </div>
+          <div>
+            <input
+              class="opt"
+              id="opt2"
+              type="radio"
+              value="insertion"
+              name="group2"
+            />
+            <label class="btn" for="opt2"> Insertion Sort </label>
+          </div>
+
+          <div>
+            <input
+              class="opt"
+              id="opt3"
+              type="radio"
+              value="selection"
+              name="group2"
+            />
+            <label class="btn" for="opt3"> Selection Sort </label>
+          </div>
+
+          <div>
+            <input
+              class="opt"
+              id="opt4"
+              type="radio"
+              value="merge"
+              name="group2"
+            />
+            <label class="btn" for="opt4"> Merge Sort </label>
+          </div>
+
+          <div>
+            <input
+              class="opt"
+              id="opt5"
+              type="radio"
+              value="quick"
+              name="group2"
+            />
+            <label class="btn" for="opt5"> Quick Sort </label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="output-sec">
+        <div class="output">
+          <div class="output-data"></div>
+          <div class="anim-control">
+            <button id="start" title="Start Sort">&#9658;</button>
+            <button id="stop" title="Pause Sort">&#10074;&#10074;</button>
+          </div>
+        </div>
+        <div class="exp">
+          <h1>Step By Step</h1>
+          <p>Explanation</p>
+          <ul>
+            <li id="cmnt">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore,
+              aspernatur.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
